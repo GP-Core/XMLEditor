@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvXML = new System.Windows.Forms.DataGridView();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aPaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aMaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -55,18 +55,6 @@
             this.dgvXML.RowTemplate.Height = 24;
             this.dgvXML.Size = new System.Drawing.Size(719, 263);
             this.dgvXML.TabIndex = 0;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(153)))), ((int)(((byte)(174)))));
-            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(274, 416);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(225, 55);
-            this.btnGuardar.TabIndex = 1;
-            this.btnGuardar.Text = "GUARDAR";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // nombre
             // 
@@ -96,6 +84,18 @@
             this.edad.Name = "edad";
             this.edad.Width = 125;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(153)))), ((int)(((byte)(174)))));
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardar.Location = new System.Drawing.Point(274, 416);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(225, 55);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(109)))), ((int)(((byte)(130)))));
@@ -112,9 +112,10 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(51)))), ((int)(((byte)(130)))));
             this.label1.Location = new System.Drawing.Point(216, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 52);
+            this.label1.Size = new System.Drawing.Size(250, 52);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Archivo XLML";
+            this.label1.Text = "Archivo XML";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // saveFileDialog1
             // 
@@ -130,7 +131,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dgvXML);
             this.Name = "Form1";
-            this.Text = "DataGrid a XLML";
+            this.Text = "DataGrid a XML";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvXML)).EndInit();
