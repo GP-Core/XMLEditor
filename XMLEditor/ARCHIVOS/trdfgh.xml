@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Personas>
+  <Persona ID="1">
+    <Nombre>rtfgh</Nombre>
+    <Paterno>drfcgvh</Paterno>
+    <Materno>rdftvg</Materno>
+    <Edad>65</Edad>
+  </Persona>
+  <Persona ID="2">
+    <Nombre>serdtf</Nombre>
+    <Paterno>drtfgy</Paterno>
+    <Materno>ftvgbh</Materno>
+    <Edad>98</Edad>
+  </Persona>
+</Personas>

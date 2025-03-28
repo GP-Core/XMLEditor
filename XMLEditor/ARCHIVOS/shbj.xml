@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Personas>
+  <Persona ID="1">
+    <Nombre>ds</Nombre>
+    <Paterno>ds</Paterno>
+    <Materno>d</Materno>
+    <Edad>sd</Edad>
+  </Persona>
+</Personas>
