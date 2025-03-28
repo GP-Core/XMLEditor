@@ -95,7 +95,7 @@ namespace XMLEditor
              personass = new XElement[dgvMain.RowCount];
             for (int j =1; j<dgvMain.RowCount-1;j++) {
                 personass[j] = new XElement("Persona",
-                               new XAttribute("ID",j+1),atributos(j));
+                               new XAttribute("IDENTIFICADOR",j+1),atributos(j));
             }
 
         }
